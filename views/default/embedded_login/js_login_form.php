@@ -10,6 +10,15 @@
 			padding: 0;
 		}
 		
+		label {
+                float:left;
+                width:50%;
+                margin-right:0.5em;
+                padding-top:0.2em;
+                text-align:left;
+                font-weight:bold;
+                }
+
 		#elgg-embedded-login .elgg-menu {
 			list-style: none;
 			padding: 0;
