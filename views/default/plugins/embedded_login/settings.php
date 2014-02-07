@@ -2,8 +2,10 @@
 
 	$js_url = elgg_get_site_url() . "embedded_login";
 
+	$site_link = elgg_view("output/url", array("text" => elgg_get_site_entity()->name, "href" => elgg_get_site_url()));
+
 	$script_code = <<<SCRIPT
-<div id="elgg-embedded-login"></div>
+<div id="elgg-embedded-login">$site_link</div>
 <script>
 	(function(d, s, id) {
 		var js, fjs = d.getElementsByTagName(s)[0];
@@ -23,8 +25,8 @@ SCRIPT;
 	#embedded_login-settings .elgg-button-submit {
 		display: none;
 	}
-	
+
 	#embedded-login-textarea {
-		height: 150px;
+		height: 170px;
 	}
 </style>
